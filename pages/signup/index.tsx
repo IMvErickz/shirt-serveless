@@ -2,18 +2,12 @@ import { ChangeEvent, FormEvent, InputHTMLAttributes, useState } from "react";
 import Input from "../components/Input";
 import axios from "axios";
 import { Toast } from "../components/Toast";
-import { useRouter } from "next/router";
-import Link from "next/link";
 
 export default function SignUp() {
 
     const [Name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
-    const router = useRouter()
-
-
 
     const inputs = [
         {
