@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
 //import prisma from "../../lib/prisma";
 
-export default async function handleProductId(req: NextApiRequest, res: NextApiResponse) {
+export default async function HandleProductId(req: NextApiRequest, res: NextApiResponse) {
     const prisma = new PrismaClient()
     if (req.method == 'GET') {
 
